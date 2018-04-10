@@ -1,0 +1,9 @@
+{
+  "gear":{
+    "type":"Weapon",
+    "rune name": "spirit",
+    "properties":{
+      "sockets": 3
+    }
+  }
+}

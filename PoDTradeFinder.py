@@ -48,12 +48,21 @@ def create_properties(trade):
     pass
 
 def property_definer(trade_item):
+    properties = trade_item.split()
+
     pass
 
 if __name__== "__main__":
-    while 1:
-        trades = update_trades(r)
-        x = format_trades(trades)
-        print(x)
-        print(len(x))
-        time.sleep(5)
+
+    trades = update_trades(r)
+    clean_trades = format_trades(trades)
+    for trade in clean_trades:
+        with open("property_dict", "a") as f:
+            f.write(trade["item"]+"\n")
+
+    #while 1:
+    #    trades = update_trades(r)
+    #    x = format_trades(trades)
+    #    print(x)
+    #    print(len(x))
+    #    time.sleep(5)

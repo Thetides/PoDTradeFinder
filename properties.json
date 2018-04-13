@@ -1,0 +1,70 @@
+{
+  "runes":[
+    "El",
+    "Eld",
+    "Tir",
+    "Nef",
+    "Eth",
+    "Ith",
+    "Tal",
+    "Ral",
+    "Ort",
+    "Thul",
+    "Amn",
+    "Sol",
+    "Shael",
+    "Dol",
+    "Hex",
+    "Io",
+    "Lum",
+    "Ko",
+    "Fal",
+    "Lem",
+    "Pul",
+    "Um",
+    "Mal",
+    "Ist",
+    "Sur",
+    "Ber",
+    "Jah",
+    "Cham",
+    "Zod"
+  ],
+  "General Item Properties":{
+    "Sockets":"soc",
+    "Skill Charm":"skiller",
+    "Defense": "def",
+    "Poison": "psn",
+    "Enhanced Defense": "ed",
+    "Magic Find": "mf",
+    "Not Corrupted": "Clean",
+    "Can Not Corrupt": "CNC",
+    "Attack Rating": "ar",
+    "Resist": "res",
+    "Faster Hit Recovery": "fhr",
+    "Increased Attack Speed": "ias"
+    "Mana Leech": "ML",
+    "Life Leech": "LL",
+    "Ethereal": "Eth"
+
+  },
+  "Rune Words": [
+    "Peace"
+  ],
+  "Sets":{
+    "Immortal Knight": "ik",
+    "Tala Rasha": "Tal"
+  },
+  "Resists":{
+    "Fire": "fr",
+    "Cold": "cr",
+    "Poison": "pr",
+    "Lightning": "lr"
+  },
+  "Type": {
+    "Grand Charm": "gc",
+  },
+  "Stats":{
+    "Dexterity": "dex",
+  }
+}

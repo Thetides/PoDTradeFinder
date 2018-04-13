@@ -42,11 +42,10 @@
     "Attack Rating": "ar",
     "Resist": "res",
     "Faster Hit Recovery": "fhr",
-    "Increased Attack Speed": "ias"
+    "Increased Attack Speed": "ias",
     "Mana Leech": "ML",
     "Life Leech": "LL",
     "Ethereal": "Eth"
-
   },
   "Rune Words": [
     "Peace"
@@ -62,9 +61,9 @@
     "Lightning": "lr"
   },
   "Type": {
-    "Grand Charm": "gc",
+    "Grand Charm": "gc"
   },
   "Stats":{
-    "Dexterity": "dex",
+    "Dexterity": "dex"
   }
 }

@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 account = json.load(open("account.json"))
 
+
 url = "https://pathofdiablo.com/p/"
 trade_url = "?trade"
 
@@ -48,17 +49,28 @@ def create_properties(trade):
     pass
 
 def property_definer(trade_item):
-    properties = trade_item.split()
-
-    pass
+    properties = json.load(open("properties.json"))
+    props = []
+    split_item = trade_item.split()
+    for k, v in properties.items():
+        if isinstance(v, dict):
+            for kv, vv in v.items():
+                for item in split_item:
+                    if item in vv:
+                        props.append(kv)
+        else:
+            for item in split_item:
+                if item in v:
+                    props.append(k)
+    return props
 
 if __name__== "__main__":
 
     trades = update_trades(r)
     clean_trades = format_trades(trades)
     for trade in clean_trades:
-        with open("property_dict", "a") as f:
-            f.write(trade["item"]+"\n")
+        trade["properties"] = property_definer(trade["item"])
+        print(trade)
 
     #while 1:
     #    trades = update_trades(r)
